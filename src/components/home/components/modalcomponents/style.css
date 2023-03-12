@@ -1,0 +1,208 @@
+.customModal {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  z-index: 11;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 12px;
+  flex-direction: column;
+  padding: 12px;
+  justify-content: space-between;
+}
+
+.hideModal {
+  display: none;
+}
+
+.showModal {
+  display: flex;
+}
+
+.modalImageParent {
+  width: 30%;
+  margin: auto;
+  max-height: 400px;
+}
+
+.modalImage {
+  width: 100%;
+  height: 100%;
+}
+
+.modalLocation {
+  display: flex;
+  align-items: center;
+}
+
+.modelControlButtons {
+  position: absolute;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.next {
+  right: 0;
+  bottom: 50%;
+}
+
+.limit {
+  color: grey;
+}
+
+.notLimit {
+  color: white;
+}
+
+.cancel {
+  top: 30px;
+  left: 20px;
+}
+
+.smallScreenCancelButton {
+    background-color: black;
+    border-radius: 50%;
+    padding: 2px;
+    bottom: 50px;
+    right: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+.previous {
+  bottom: 50%;
+}
+
+@media only screen and (max-width: 1095px) {
+  .modalImageParent {
+    width: 40%;
+  }
+
+  .cancel {
+    left: 10px;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .next {
+    right: 20px;
+    background-color: black;
+  }
+
+  .previous {
+    left: 20px;
+    background-color: black;
+  }
+
+  .cancel {
+    left: 5px;
+  }
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 10;
+  position: absolute;
+}
+
+.showBack {
+  display: flex;
+}
+
+.hideBack {
+  display: none;
+}
+
+.modalFirstChild {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonParents {
+  align-items: center;
+  gap: 5px;
+}
+
+.smallSizeButtonParent {
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    padding: 8px;
+    margin: 0 auto;
+    z-index: 11;
+    left: 0;
+    right: 0;
+    align-items: flex-start;
+    background-color: white;
+    border: 1px solid grey;
+    gap: 10px;
+    width: max-content;
+}
+
+.showMore {
+    display: flex;
+}
+
+.hideMore {
+    display: none;
+}
+
+.buttonComponent {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  border: 1px solid grey;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.buttonComponent:hover {
+  border: 1px solid black;
+}
+
+.contactButton {
+  background-color: green;
+  color: white;
+}
+
+.getInTouchOptionsParent {
+  position: absolute;
+  right: 20px;
+  top: 65px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  border: 1px solid grey;
+  padding: 12px;
+  border-radius: 8px;
+  width: 110px;
+}
+
+.getInTouchOption {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px;
+  align-items: center;
+}
+
+.getInTouchOption:hover {
+  background-color: grey;
+  color: white;
+}
+
+.showOptions {
+  display: flex;
+}
+
+.hideOptions {
+  display: none;
+}

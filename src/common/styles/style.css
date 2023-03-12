@@ -1,0 +1,31 @@
+.input_parent .input_field {
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: 1px solid grey;
+  width: 250px;
+  padding-right: 50px;
+}
+
+.input_parent .input_field:focus {
+  outline: none;
+}
+
+.input_parent {
+  position: relative;
+}
+
+.input_parent .icon_parent {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+.input_parent .secure_icon_parent {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 420px) {
+  .input_parent .input_field {
+    width: 220px;
+  }
+}

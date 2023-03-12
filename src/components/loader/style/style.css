@@ -1,0 +1,74 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .loader {
+    position: relative;
+  }
+  
+  .roof1,
+  .roof2,
+  .wall1,
+  .wall2,
+  .base {
+    position: absolute;
+    width: 5px;
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+  .roof1 {
+    transform: rotate(50deg);
+    left: 10px;
+  }
+  
+  .roof2 {
+    transform: rotate(310deg);
+    left: 38px;
+  }
+  
+  .wall1,
+  .wall2 {
+    top: 20px;
+  }
+  
+  .wall1 {
+    left: 8px;
+  }
+  
+  .wall2 {
+    left: 42px;
+  }
+  
+  .base {
+    transform: rotate(90deg);
+    top: 40px;
+    left: 25px;
+  }
+  
+  .doorwall1, .doorwall2, .doorroof {
+    width: 5px;
+    background-color: black;
+    border-radius: 12px;
+    position: absolute;
+    top: 40px;
+  }
+  
+  .doorwall1 {
+      left: 20px;
+  }
+  
+  .doorwall2 {
+      left: 30px;
+  }
+  
+  .doorroof {
+      transform: rotate(90deg);
+      left: 25px;
+      top: 30px;
+  }
+  
