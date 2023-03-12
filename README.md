@@ -2,6 +2,15 @@
 
 it is an online marketplace to browse and buy homes online.
 
+## wanna run locally
+
+## follow these Steps
+1. clone the repo.
+2. install the packages
+3. start the server locally by npm run start command.
+
+that's it
+
 ## Snapshots
 ![login](./glimpse/login.png)
 
