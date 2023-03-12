@@ -87,7 +87,7 @@ const Content = () => {
       email: email,
       phoneNumber: phoneNumber,
       createdAt: new Date(),
-      url: 'http://localhost:3000'
+      url: 'https://homellc-r4zvgyf6i-abhijain3002-gmailcom.vercel.app'
     });
   }
 
