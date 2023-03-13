@@ -5,6 +5,7 @@ export const userAPI = createApi({
   reducerPath: "users",
   baseQuery: fetchBaseQuery({
     baseUrl: process.env.REACT_APP_API,
+    // baseUrl: 'http://localhost:8000/'
   }),
 
   endpoints: (builder) => ({

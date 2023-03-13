@@ -13,7 +13,6 @@ import { toast, ToastContainer } from 'react-toastify';
 const NewPassword = () => {
     const [password, setpassword] = useState("");
     const [confirmPassword, setconfirmPassword] = useState("");
-    const [email, setemail] = useState("");
     const [updatePassword, updateResponse] = useUpdatePasswordMutation();
     const navigate = useNavigate();
     const location = useLocation();
@@ -26,7 +25,7 @@ const NewPassword = () => {
     }
 
     function update() {
-        if (confirmPassword.length === 0 || password.length === 0 || email.length === 0) {
+        if (confirmPassword.length === 0 || password.length === 0) {
             toast.warning("please fill all the details");
             return;
         }
@@ -36,7 +35,7 @@ const NewPassword = () => {
             return;
         }
 
-        updatePassword({ password: password, token: routeSplit[routeSplit.length - 1], email: email });
+        updatePassword({ password: password, token: routeSplit[routeSplit.length - 1] });
     }
 
     function handlingResponse(response: any, successMsg: string) {
@@ -76,9 +75,6 @@ const NewPassword = () => {
                 <LoginAnime>
                     <div>Update Password</div>
                     <div>we care for your efforts, but the success is right away.</div>
-                </LoginAnime>
-                <LoginAnime>
-                    <Input value={email} setValue={setemail} label='Email*' iconName='email' />
                 </LoginAnime>
                 <LoginAnime>
                     <Input value={password} setValue={setpassword} label='Password*' iconName='password' />

@@ -80,7 +80,7 @@ const Content = () => {
       toast.warning("please fill all details");
       return;
     }
-    
+
     forgotUser({
       firstName: firstName,
       lastName: lastName,

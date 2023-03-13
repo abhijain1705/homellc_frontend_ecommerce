@@ -38,7 +38,6 @@ export interface ForgotInterface {
 
 export interface NewPasword {
   password: string;
-  email: string;
   token: string;
 }
 
