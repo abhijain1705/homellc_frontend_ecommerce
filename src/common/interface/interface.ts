@@ -33,7 +33,6 @@ export interface ForgotInterface {
   lastName: string;
   email: string;
   phoneNumber: string;
-  url: string;
   createdAt: Date;
 }
 
